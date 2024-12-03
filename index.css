@@ -1,67 +1,111 @@
-/* General styling */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: url("WEB poster@3xSX2W.jpg") no-repeat center center fixed;
-    background-size: cover;
-    color: #fff; /* Adjust text color for readability */
-}
-
-/* Navbar styling */
-.navbar nav ul {
-    list-style: none;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background: url("Betri%20ya%20gari%20inayodumu%20%403x%20WEB-2.jpg") no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.navbar nav ul {
+    list-style: none;
     display: flex;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for contrast */
-    padding: 10px;
 }
 
 .navbar nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 .navbar nav ul li a {
     text-decoration: none;
     color: #fff;
+    font-weight: bold;
     font-size: 18px;
-    transition: color 0.3s ease;
+    transition: color 0.3s;
 }
 
 .navbar nav ul li a:hover {
-    color: #ffa500; /* Highlight color on hover */
+    color: #ffa500;
 }
 
-/* Header section */
-header.container {
+/* Header */
+header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 100px 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Optional overlay for better text visibility */
 }
 
 header .row .col h1 {
-    font-size: 48px;
+    font-size: 3rem;
+    font-weight: bold;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Text shadow for better visibility */
+    color: #ffa500;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
 }
 
 header .row .col p {
-    font-size: 20px;
+    font-size: 1.2rem;
     margin-bottom: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 }
 
-/* Button styling */
+/* Button */
 .btnz {
     background-color: #ffa500;
     color: #fff;
     border: none;
     padding: 15px 30px;
-    font-size: 18px;
+    font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .btnz:hover {
-    background-color: #ff7f00; /* Slightly darker orange on hover */
+    background-color: #ff7f00;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
+
+/* Footer (Optional for a professional look) */
+footer {
+    background: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
